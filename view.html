@@ -1,0 +1,23 @@
+{% extends 'layouts.html' %}
+{% block heading %}
+View your account information.
+{% endblock %}
+
+{% block body %}
+Name = {{ info[1] }}
+<br>
+Account Number = {{ info[2] }}
+<br>
+Phone Number = {{ info[3] }}
+<br>
+Address = {{ info[4] }}
+<br>
+Email = {{ info[5] }}
+<br>
+Balance = {{ info[6] }}
+<br>
+<a href="{{url_for('index')}}">Go Back</a>
+
+
+
+{% endblock %}

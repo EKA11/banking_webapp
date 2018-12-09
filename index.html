@@ -1,0 +1,18 @@
+{% extends 'layouts.html' %}
+{% block heading %}
+Vijay Maalya Bank
+{% endblock %}
+{% block body %}
+<h3>Here are the services we offer:</h3>
+<ol>
+  <li><a href="{{url_for('create')}}">Create New Account</a></li>
+  <li><a href="{{url_for('deposit')}}">Deposit Money</a></li>
+  <li><a href="{{url_for('debit')}}">Withdraw Money</a></li>
+  <li><a href="{{url_for('transfer')}}">Transfer Money</a></li>
+  <li><a href="{{url_for('delete')}}">Delete Account</a></li>
+  <li><a href="{{url_for('review')}}">View your account</a></li>
+
+
+</ol>
+
+{% endblock %}

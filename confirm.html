@@ -1,0 +1,13 @@
+{% extends 'layouts.html' %}\
+{% block heading %}
+Success!
+{% endblock %}
+{% block body %}
+<h3> Are you sure you want to delete your account?<br>This can't be undone!!</h3>
+<form action = "{{url_for('delete1')}}" method = "post">
+<input type="radio" name="yes" value="male" checked> YES<br>
+<input type="radio" name="no" value="male" checked> NO<br>
+<button>Confirm</button>
+</form>
+<a href="{{url_for('index')}}">Go Back</a>
+{% endblock %}

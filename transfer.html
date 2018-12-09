@@ -1,0 +1,15 @@
+xtends 'layouts.html' %}\
+{% block heading %}
+Deposit
+{% endblock %}
+{% block body %}
+<h3>Please enter your Account number and password </h3>
+<form action ="{{url_for('transfer1')}}" method="post">
+<input type='number' name="acc_no" placeholder="Your Acc. No.">
+<input type='password' name="pin" placeholder="Password">
+<input type='number' name="tacc_no" placeholder="Acc. to transfer">
+<input type='number' name="balance" placeholder='Amount to transfer'>
+<button>Submit</button>
+</form>
+<a href="{{url_for('index')}}">Go Back</a>
+{% endblock %}
