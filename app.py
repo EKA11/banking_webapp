@@ -52,7 +52,7 @@ def create1():
 
     name1 = request.form.get("name")
     #acc_no1 = request.form.get("acc_no")
-    acc_no1 = random.randint(10000,99999)
+    acc_no1 = random.randint(1000000000000,9999999999999)
     ph_no1 = request.form.get("ph_no")
     address1 = request.form.get("address")
     email1 = request.form.get("email")
